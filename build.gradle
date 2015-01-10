@@ -31,6 +31,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     testCompile("org.springframework.boot:spring-boot-starter-test")
+	
+	compile("com.h2database:h2")
 }
 
 eclipse {
