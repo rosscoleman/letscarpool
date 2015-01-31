@@ -25,10 +25,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-	
-	@RequestMapping(value="/about", method=RequestMethod.GET)
+
+	@RequestMapping(value = { "/", "/about" }, method = RequestMethod.GET)
 	public Map<String, String> about() {
-		// TODO: get version and build date from Gradle-generated version.properties file
+		// TODO: get version and build date from Gradle-generated
+		// version.properties file
 		Map<String, String> aboutMap = new LinkedHashMap<String, String>();
 		aboutMap.put("name", "Let's Carpool REST API");
 		aboutMap.put("version", "0.1-SNAPSHOT");
@@ -37,5 +38,9 @@ public class HomeController {
 		return aboutMap;
 	}
 
-}
+	@RequestMapping(value = "/secured", method = RequestMethod.GET)
+	public String securedInfo() {
+		return "pretend this is sensitive information";
+	}
 
+}

@@ -18,15 +18,18 @@ package net.letscarpool.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan
-@EnableAutoConfiguration
+@EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
 public class LetscarpoolRestApplication {
-	
-    public static void main(String[] args) {
-        SpringApplication.run(LetscarpoolRestApplication.class, args);
-    }
+	// Exceptions to HTTP Status codes:
+	// http://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+
+	public static void main(String[] args) {
+		SpringApplication.run(LetscarpoolRestApplication.class, args);
+	}
 }
