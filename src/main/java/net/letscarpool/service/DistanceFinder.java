@@ -14,9 +14,9 @@
    limitations under the License.
  */
 
-package net.letscarpool.rest.service;
+package net.letscarpool.service;
 
-import net.letscarpool.rest.domain.Location;
+import net.letscarpool.domain.Location;
 
 import org.springframework.stereotype.Service;
 

@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package net.letscarpool.rest.domain;
+package net.letscarpool.domain;
 
 import lombok.Data;
 

@@ -14,14 +14,19 @@
    limitations under the License.
  */
 
-package net.letscarpool.rest.domain;
+package net.letscarpool.domain;
+
+import java.math.BigDecimal;
 
 import lombok.Data;
 
 @Data
-public class User {
+public class Location {
 	private Integer id;
-	private String first;
-	private String last;
-	private String email;
+	private String address;
+	private String city;
+	private String state;
+	private Integer zip;
+	private BigDecimal latitude;
+	private BigDecimal longitude;
 }

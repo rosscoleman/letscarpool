@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package net.letscarpool.rest.web;
+package net.letscarpool.web;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

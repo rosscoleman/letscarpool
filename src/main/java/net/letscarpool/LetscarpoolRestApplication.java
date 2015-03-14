@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package net.letscarpool.rest;
+package net.letscarpool;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

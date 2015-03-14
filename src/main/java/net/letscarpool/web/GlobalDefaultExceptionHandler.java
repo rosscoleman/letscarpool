@@ -1,4 +1,4 @@
-package net.letscarpool.rest.web;
+package net.letscarpool.web;
 
 import javax.servlet.http.HttpServletRequest;
 
