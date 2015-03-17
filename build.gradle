@@ -35,7 +35,8 @@ dependencies {
     
     testCompile "org.springframework.boot:spring-boot-starter-test"
 	
-	runtime "com.h2database:h2"
+	//runtime "com.h2database:h2"
+	runtime "org.postgresql:postgresql:9.3-1103-jdbc41"
 }
 
 eclipse {
