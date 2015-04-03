@@ -16,12 +16,31 @@
 
 package net.letscarpool.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.Data;
 
 @Data
+@Entity
+@Table(name = "app_user")
 public class User {
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
 	private String first;
 	private String last;
 	private String email;
+
+	public User() {
+		super();
+	}
+
+	public User(String first, String last) {
+		this.first = first;
+		this.last = last;
+	}
 }
